@@ -13,10 +13,9 @@
         
         <div id="nav-pill" class="bg-black border border-white/10 rounded-full p-1.5 flex items-center justify-between min-w-[340px] md:min-w-fit transition-all duration-300 shadow-2xl">
             
-            <div class="logo-area pl-4 pr-6 flex items-center justify-center min-w-[80px]">
-                <a href="index.html" class="text-white font-black tracking-tighter uppercase italic text-sm hover:opacity-80 transition">
-                 <img src="/Users/rahul/Downloads/AstaNow.png" class="h-6 w-auto" alt="AstaNow Logo">
-                </a>
+            <div class="logo-area pl-4 pr-6 flex items-center">
+                <a href="index.html" class="text-white font-black tracking-tighter uppercase italic text-sm hover:opacity-80 transition flex items-center gap-2">
+                    <img src="/Users/rahul/Downloads/AstaNow.png" class="h-5 w-auto ml-4" alt="Logo">
             </div>
 
             <div class="hidden md:flex items-center gap-1">
@@ -45,13 +44,11 @@
             if (menu.classList.contains('hidden')) {
                 menu.classList.remove('hidden');
                 menu.classList.add('flex');
-                // Change style to Black button/White text when open
                 btn.classList.remove('bg-white', 'text-black');
                 btn.classList.add('bg-black', 'text-white', 'border', 'border-white/20');
             } else {
                 menu.classList.add('hidden');
                 menu.classList.remove('flex');
-                // Revert to original white curvy box
                 btn.classList.add('bg-white', 'text-black');
                 btn.classList.remove('bg-black', 'text-white', 'border', 'border-white/20');
             }
