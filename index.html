@@ -3,25 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASTANOW | Tech & Space</title>
+    <title>ASTANOW | Intelligence & Space</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50">
+<body class="bg-[#0f172a] text-white">
 
-    <nav class="nav-glass">
-        <div class="logo">ASTA<span>NOW</span></div>
-        <ul class="nav-links">
-            <li><a href="#">Tech</a></li>
-            <li><a href="#">Space</a></li>
-            <li><a href="#">History</a></li>
-        </ul>
+    <div class="bg-blue-600 text-white py-2 text-center text-xs font-bold uppercase tracking-widest">
+        Live Update: Mars Mission 2026 Telemetry Received
+    </div>
+
+    <nav class="nav-glass px-8 py-6 flex justify-between items-center border-b border-white/10 sticky top-0 z-50">
+        <div class="logo font-black text-2xl tracking-tighter">ASTA<span class="text-blue-500">NOW</span></div>
+        <div class="hidden md:flex space-x-10 text-sm font-semibold uppercase tracking-wider">
+            <a href="#" class="hover:text-blue-400 transition">Intelligence</a>
+            <a href="#" class="hover:text-blue-400 transition">Cosmos</a>
+            <a href="#" class="hover:text-blue-400 transition">Archives</a>
+            <a href="#" class="hover:text-blue-400 transition">Global</a>
+        </div>
+        <button class="border border-blue-500 text-blue-500 px-6 py-2 rounded-full font-bold hover:bg-blue-500 hover:text-white transition">LOGIN</button>
     </nav>
 
-    <header class="hero">
-        <h1>Future of <span class="highlight">Intelligence</span></h1>
-        <p>Reporting on Space, Tech, and History.</p>
-    </header>
+    <main class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid lg:grid-cols-12 gap-12">
+            
+            <div class="lg:col-span-8">
+                <div class="relative rounded-3xl overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200" class="w-full aspect-[16/9] object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent"></div>
+                    <div class="absolute bottom-10 left-10">
+                        <span class="bg-blue-600 px-3 py-1 text-xs font-bold rounded">COSMOS</span>
+                        <h2 class="text-4xl md:text-6xl font-black mt-4 leading-tight">Quantum Comm <br>from Deep Space.</h2>
+                        <p class="text-slate-400 mt-4 max-w-lg">New signals detected from the edge of the solar system suggest a breakthrough in non-linear intelligence.</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="lg:col-span-4 space-y-8">
+                <h3 class="text-xl font-bold border-l-4 border-blue-600 pl-4 uppercase tracking-tighter">The Pulse</h3>
+                
+                <div class="border-b border-white/5 pb-6">
+                    <span class="text-blue-400 text-xs font-bold uppercase">Intelligence</span>
+                    <h4 class="text-lg font-bold mt-2 hover:text-blue-400 cursor-pointer">AI Regulation: The 2026 Accord Signed</h4>
+                    <p class="text-slate-500 text-sm mt-1">Nations agree on the "Ghost Protocol" for neuro-links.</p>
+                </div>
+
+                <div class="border-b border-white/5 pb-6">
+                    <span class="text-blue-400 text-xs font-bold uppercase">History</span>
+                    <h4 class="text-lg font-bold mt-2 hover:text-blue-400 cursor-pointer">Unearthing the First Digital City</h4>
+                    <p class="text-slate-500 text-sm mt-1">Archaeologists find server remnants in the Sahara.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
 </body>
 </html>
