@@ -5,35 +5,25 @@ body {
     margin: 0;
 }
 
-/* 5. White Curvy Box Selection Style */
+/* 5. The Selection Style (White Curvy Box) */
 .nav-item {
-    color: #94a3b8; /* slate-400 */
+    color: #94a3b8; /* Normal slate color */
     padding: 10px 24px;
     font-size: 13px;
     font-weight: 700;
     border-radius: 9999px;
     transition: all 0.2s ease;
     text-decoration: none;
+    display: inline-block;
 }
 
-.nav-item:hover, .nav-item:focus {
+/* When you hover or select, it turns into the White Box */
+.nav-item:hover, .nav-item:active, .nav-item:focus {
     background-color: white;
-    color: black;
+    color: black !important;
 }
 
-/* 3. Call to Action Button (Standard White) */
-.nav-btn {
-    background-color: white;
-    color: black;
-    padding: 10px 24px;
-    border-radius: 9999px;
-    font-weight: 700;
-    font-size: 13px;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-}
-
-/* 6. Mobile Nav Items Styling */
+/* 6. Mobile Nav Items */
 .mobile-nav-item {
     width: 100%;
     text-align: center;
@@ -49,7 +39,6 @@ body {
     transition: all 0.2s ease;
 }
 
-/* Highlighted Selection on Mobile */
 .mobile-nav-item:hover, .mobile-nav-item:active {
     background-color: white;
     color: black;

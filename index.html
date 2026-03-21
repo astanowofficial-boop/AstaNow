@@ -22,7 +22,7 @@
             <div class="hidden md:flex items-center gap-1">
                 <a href="#" class="nav-item">Articles</a>
                 <a href="#" class="nav-item">About Us</a>
-                <a href="#" class="nav-btn">Update Me</a>
+                <a href="#" class="nav-item">Update Me</a>
             </div>
 
             <button onclick="toggleMobileMenu()" id="menu-btn" class="md:hidden bg-white text-black px-6 py-2.5 rounded-full font-bold text-[10px] uppercase tracking-[0.2em] transition-all">
@@ -33,7 +33,7 @@
         <div id="mobile-menu" class="hidden flex-col w-full max-w-[340px] gap-2 mt-3 p-2 bg-black border border-white/10 rounded-[2.5rem] md:hidden shadow-2xl">
             <a href="#" class="mobile-nav-item">Articles</a>
             <a href="#" class="mobile-nav-item">About Us</a>
-            <a href="#" class="mobile-nav-item border-none bg-white text-black">Update Me</a>
+            <a href="#" class="mobile-nav-item">Update Me</a>
         </div>
     </nav>
 
@@ -45,7 +45,7 @@
             if (menu.classList.contains('hidden')) {
                 menu.classList.remove('hidden');
                 menu.classList.add('flex');
-                // 6. Change style when open: Button Black, Text White
+                // Change style to Black button/White text when open
                 btn.classList.remove('bg-white', 'text-black');
                 btn.classList.add('bg-black', 'text-white', 'border', 'border-white/20');
             } else {
