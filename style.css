@@ -1,0 +1,32 @@
+/* Custom Styles for Astanow */
+.nav-glass {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #2563eb;
+}
+
+.logo span {
+    color: #1e293b;
+}
+
+.highlight {
+    color: #2563eb;
+    background: linear-gradient(to right, #2563eb, #4f46e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
