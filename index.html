@@ -3,88 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASTANOW | Intelligence & Space</title>
+    <title>ASTANOW | 2026 Intelligence</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#0f172a] text-white">
+<body class="bg-[#050505] text-white selection:bg-cyan-500">
 
-    <div class="bg-blue-600 text-white py-2 text-center text-xs font-bold uppercase tracking-widest">
-        Live Update: Mars Mission 2026 Telemetry Received
-    </div>
-
-    <nav class="nav-glass px-8 py-6 flex justify-between items-center border-b border-white/10 sticky top-0 z-50">
-        <div class="logo font-black text-2xl tracking-tighter">ASTA<span class="text-blue-500">NOW</span></div>
-        <div class="hidden md:flex space-x-10 text-sm font-semibold uppercase tracking-wider">
-            <a href="#" class="hover:text-blue-400 transition">Intelligence</a>
-            <a href="#" class="hover:text-blue-400 transition">Cosmos</a>
-            <a href="#" class="hover:text-blue-400 transition">Archives</a>
-            <a href="#" class="hover:text-blue-400 transition">Global</a>
+    <nav class="border-b border-white/5 py-8 px-10 flex justify-between items-center bg-black/50 backdrop-blur-xl sticky top-0 z-50">
+        <div class="text-3xl font-black tracking-tighter uppercase italic">
+            Asta<span class="text-cyan-400">now</span>
         </div>
-        <button class="border border-blue-500 text-blue-500 px-6 py-2 rounded-full font-bold hover:bg-blue-500 hover:text-white transition">LOGIN</button>
+        <div class="flex gap-8 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">
+            <a href="#" class="hover:text-cyan-400 transition">Terminal</a>
+            <a href="#" class="hover:text-cyan-400 transition">Intelligence</a>
+            <a href="#" class="hover:text-cyan-400 transition">Vault</a>
+        </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-6 py-20">
-        <section class="mt-20 border-t border-white/10 pt-16">
-            <h2 class="text-3xl font-black mb-10 tracking-tighter uppercase">Intelligence Reports</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="report-card p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500 transition cursor-pointer">
-                    <div class="text-blue-500 mb-4 font-mono">01/</div>
-                    <h3 class="text-xl font-bold mb-4">The Silicon Soul</h3>
-                    <p class="text-slate-400 text-sm">A deep dive into the ethics of autonomous decision-making in deep space probes.</p>
-                </div>
-                <div class="report-card p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500 transition cursor-pointer">
-                    <div class="text-blue-500 mb-4 font-mono">02/</div>
-                    <h3 class="text-xl font-bold mb-4">Neural Horizons</h3>
-                    <p class="text-slate-400 text-sm">How brain-computer interfaces are rewriting the history of human communication.</p>
-                </div>
-                <div class="report-card p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500 transition cursor-pointer">
-                    <div class="text-blue-500 mb-4 font-mono">03/</div>
-                    <h3 class="text-xl font-bold mb-4">Exo-History</h3>
-                    <p class="text-slate-400 text-sm">Searching for ancient data structures on the moons of Jupiter.</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="mt-20 p-12 rounded-[2rem] bg-gradient-to-br from-blue-900/20 to-slate-900 border border-blue-500/30 text-center">
-            <h2 class="text-4xl font-black mb-4">Stay Synchronized.</h2>
-            <p class="text-slate-400 mb-8 max-w-md mx-auto">Get the weekly AstaNow report on Intelligence, Space, and History delivered to your terminal.</p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center max-w-lg mx-auto">
-                <input type="email" placeholder="Enter your email" class="bg-white/10 border border-white/20 px-6 py-4 rounded-xl flex-grow focus:outline-none focus:border-blue-500 transition">
-                <button class="bg-blue-600 px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition">SUBSCRIBE</button>
-            </div>
+    <main class="max-w-6xl mx-auto py-24 px-6">
+        <div class="border-l-2 border-cyan-500 pl-10 mb-32">
+            <h1 class="text-7xl md:text-9xl font-black leading-none uppercase mb-6 tracking-tighter">
+                The New <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">Standard</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-xl font-medium leading-relaxed">
+                You are viewing the automated 2026 build. Syncing is now verified. Digital archives and intelligence reports are being decrypted.
+            </p>
         </div>
-        <div class="grid lg:grid-cols-12 gap-12">
-            
-            <div class="lg:col-span-8">
-                <div class="relative rounded-3xl overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200" class="w-full aspect-[16/9] object-cover group-hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent"></div>
-                    <div class="absolute bottom-10 left-10">
-                        <span class="bg-blue-600 px-3 py-1 text-xs font-bold rounded">COSMOS</span>
-                        <h2 class="text-4xl md:text-6xl font-black mt-4 leading-tight">Quantum Comm <br>from Deep Space.</h2>
-                        <p class="text-slate-400 mt-4 max-w-lg">New signals detected from the edge of the solar system suggest a breakthrough in non-linear intelligence.</p>
-                    </div>
-                </div>
+
+        <div class="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10 overflow-hidden rounded-sm">
+            <div class="bg-[#050505] p-16 hover:bg-cyan-950/20 transition group">
+                <span class="text-cyan-500 font-mono text-xs mb-4 block underline underline-offset-8">CASE STUDY 01</span>
+                <h2 class="text-3xl font-bold mb-4 group-hover:translate-x-2 transition">Neuro-Link Alpha</h2>
+                <p class="text-slate-500">The first successful link between a human mind and a quantum processor has been established.</p>
             </div>
-
-            <div class="lg:col-span-4 space-y-8">
-                <h3 class="text-xl font-bold border-l-4 border-blue-600 pl-4 uppercase tracking-tighter">The Pulse</h3>
-                
-                <div class="border-b border-white/5 pb-6">
-                    <span class="text-blue-400 text-xs font-bold uppercase">Intelligence</span>
-                    <h4 class="text-lg font-bold mt-2 hover:text-blue-400 cursor-pointer">AI Regulation: The 2026 Accord Signed</h4>
-                    <p class="text-slate-500 text-sm mt-1">Nations agree on the "Ghost Protocol" for neuro-links.</p>
-                </div>
-
-                <div class="border-b border-white/5 pb-6">
-                    <span class="text-blue-400 text-xs font-bold uppercase">History</span>
-                    <h4 class="text-lg font-bold mt-2 hover:text-blue-400 cursor-pointer">Unearthing the First Digital City</h4>
-                    <p class="text-slate-500 text-sm mt-1">Archaeologists find server remnants in the Sahara.</p>
-                </div>
+            <div class="bg-[#050505] p-16 hover:bg-blue-950/20 transition group border-l border-white/10">
+                <span class="text-blue-500 font-mono text-xs mb-4 block underline underline-offset-8">SPACE LOG 88</span>
+                <h2 class="text-3xl font-bold mb-4 group-hover:translate-x-2 transition">Saturn Rings</h2>
+                <p class="text-slate-500">Recent telemetry shows geometric patterns forming in the dust of the rings.</p>
             </div>
-
         </div>
     </main>
+
 </body>
 </html>
