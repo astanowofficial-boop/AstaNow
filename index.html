@@ -3,88 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASTANOW | Intelligence</title>
+    <title>Article Page</title>
+
+    <!-- Link CSS file -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#050505] min-h-screen">
 
-    <nav class="fixed top-8 left-0 w-full z-[100] px-4 flex flex-col items-center">
-        
-        <div id="nav-pill" class="bg-black border border-white/10 rounded-full p-1.5 flex items-center justify-between min-w-[340px] md:min-w-fit transition-all duration-300 shadow-2xl">
-            
-            <div class="logo-area pl-4 pr-6 flex items-center">
-                <a href="index.html" class="text-white font-black tracking-tighter uppercase italic text-sm hover:opacity-80 transition flex items-center gap-2">
-                    <img src="AstaNow.png" class="h-5 w-auto ml-4" alt="Logo">
-            </div>
+<body>
 
-            <div class="hidden md:flex items-center gap-1">
-                <a href="#" class="nav-item">Articles</a>
-                <a href="#" class="nav-item">About Us</a>
-                <a href="#" class="nav-item">Update Me</a>
-            </div>
-
-            <button onclick="toggleMobileMenu()" id="menu-btn" class="md:hidden bg-white text-black px-6 py-2.5 rounded-full font-bold text-[10px] uppercase tracking-[0.2em] transition-all">
-                Menu
-            </button>
-        </div>
-
-        <div id="mobile-menu" class="hidden flex-col w-full max-w-[340px] gap-2 mt-3 p-2 bg-black border border-white/10 rounded-[2.5rem] md:hidden shadow-2xl">
-            <a href="#" class="mobile-nav-item">Articles</a>
-            <a href="#" class="mobile-nav-item">About Us</a>
-            <a href="#" class="mobile-nav-item">Update Me</a>
-        </div>
-    </nav>
-    <!-- MAIN CONTENT -->
-<main class="mt-32 px-4 text-white">
-
-  <!-- FEATURED ARTICLE -->
-  <section class="max-w-5xl mx-auto mb-12">
-    <h1 class="text-3xl font-bold mb-4">Featured</h1>
-
-    <div class="bg-white/5 p-6 rounded-xl">
-      <h2 class="text-2xl font-bold">iPhone 18 Launch</h2>
-      <p class="text-gray-400 mt-2">Apple is planning major upgrades...</p>
-
-      <!-- 🔗 THIS CONNECTS TO ARTICLE PAGE -->
-      <a href="article.html?slug=iphone" class="mt-4 inline-block text-blue-400">
-        Read Full Article →
-      </a>
-      <a href="index.html" class="...">
-    <img src="AstaNow.png" ...>
-</a>
-    </div>
-  </section>
-  <a href="article.html?slug=iphone">Read More</a>
-
-  <!-- ARTICLE LIST -->
-  <section class="max-w-5xl mx-auto">
-    <h2 class="text-2xl font-bold mb-4">Latest Articles</h2>
-
-    <div id="articles-list" class="grid md:grid-cols-2 gap-6"></div>
-  </section>
-
-</main>
-
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const btn = document.getElementById('menu-btn');
-            
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden');
-                menu.classList.add('flex');
-                btn.classList.remove('bg-white', 'text-black');
-                btn.classList.add('bg-black', 'text-white', 'border', 'border-white/20');
-            } else {
-                menu.classList.add('hidden');
-                menu.classList.remove('flex');
-                btn.classList.add('bg-white', 'text-black');
-                btn.classList.remove('bg-black', 'text-white', 'border', 'border-white/20');
-            }
-        }
-    </script>
-    <script src="js/main.js"></script>
-    
 </body>
 </html>
