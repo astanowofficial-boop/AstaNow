@@ -50,34 +50,23 @@
 
   <!-- ═══ PAGE CONTENT (articles, etc.) goes below here ══════ -->
   <main class="page-content">
-    <!-- We'll build this in the next steps -->
-     <main class="page-content">
 
-  <!-- ═══ ARTICLE HEADER (filled dynamically by script.js) ══ -->
+  <!-- Article header stays exactly as before -->
   <div class="article-header">
-
-    <!-- 1. Category breadcrumb -->
     <div class="article-category">
       <span id="art-category"></span>
       <span class="category-sep"> - </span>
       <span id="art-subcategory"></span>
     </div>
-
-    <!-- 2. Article title -->
     <h1 class="article-title" id="art-title"></h1>
-
-    <!-- 3. Author + date row -->
     <div class="article-meta">
       <span class="meta-text">
         Authored by: <strong id="art-author"></strong>
         &nbsp;|&nbsp;
         Updated <span id="art-date"></span>, <span id="art-time"></span>
       </span>
-
-      <!-- 4. Social icons (right side) -->
       <div class="social-icons">
         <a id="social-instagram" href="#" target="_blank" aria-label="Instagram">
-          <!-- Instagram SVG icon -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="5"/>
             <circle cx="12" cy="12" r="4.5"/>
@@ -85,19 +74,16 @@
           </svg>
         </a>
         <a id="social-facebook" href="#" target="_blank" aria-label="Facebook">
-          <!-- Facebook SVG icon -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
           </svg>
         </a>
         <a id="social-twitter" href="#" target="_blank" aria-label="X / Twitter">
-          <!-- X (Twitter) SVG icon -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L2.25 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
           </svg>
         </a>
         <a id="social-email" href="#" aria-label="Email">
-          <!-- Email SVG icon -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="4" width="20" height="16" rx="2"/>
             <path d="M2 7l10 7 10-7"/>
@@ -105,11 +91,49 @@
         </a>
       </div>
     </div>
+  </div>
+
+  <!-- ═══ TWO COLUMN LAYOUT: Article + Sidebar ══════════════ -->
+  <div class="content-wrapper">
+
+    <!-- LEFT: Article body (dynamic content) -->
+    <article class="article-body" id="article-body">
+      <!-- script.js fills this from article.json content array -->
+    </article>
+
+    <!-- RIGHT: Sidebar -->
+    <aside class="sidebar">
+
+      <!-- Sidebar Ad slot — empty div, AdSense fills it -->
+      <!-- When empty: takes zero height, no visible text -->
+      <div class="sidebar-ad-slot">
+        <!-- Paste your AdSense <ins> tag here when ready:
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+      </div>
+
+      <!-- Related Articles — filled by script.js -->
+      <div class="related-articles">
+        <h3 class="related-title">Related Articles</h3>
+        <ul class="related-list" id="related-list">
+          <!-- script.js fills this -->
+        </ul>
+      </div>
+
+    </aside>
 
   </div>
-  <!-- ═══ END ARTICLE HEADER ════════════════════════════════ -->
+  <!-- ═══ END TWO COLUMN LAYOUT ══════════════════════════════ -->
 
 </main>
+
+<script src="script.js"></script>
 
 <!-- Load the script at the bottom so HTML is ready first -->
 <script src="script.js"></script>
