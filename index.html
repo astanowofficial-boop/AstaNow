@@ -1,65 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstaNow</title>
 
-    <!-- Link CSS file -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google AdSense script goes here later -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_ID" crossorigin="anonymous"></script> -->
 </head>
+<body>
 
-<body> 
-    <nav class="navbar">
-
-    <!-- Top line -->
-    <div class="nav-line"></div>
-
-    <!-- Main navbar -->
-   <div class="nav-content">
-
-    <!-- EMPTY LEFT SPACE -->
-    <div style="width: 120px;"></div>
-
-    <!-- LOGO CENTER -->
-    <div class="nav-logo">
-        <img src="AstaNow.png" alt="Logo">
-    </div>
-
-    <!-- RIGHT BUTTON -->
-    <div class="nav-button">
-        <button>Sign me up</button>
-    </div>
-
-</div>
-
-    <!-- Bottom line -->
-    <div class="nav-line"></div>
-
-</nav>
-
- <!-- NAVBAR (top) -->
-
-    <div class="container">
-    <div class="top-ad" id="topAd">
-        <!-- AdSense will come here later -->
-    </div>
-</div>
-<div class="top-ad" id="topAd">
-    <span class="ad-label">Advertisement</span> <!-- need to remove advertisement word when needed -->
-</div>
-
-<!-- <div class="top-ad" id="topAd">
-
+  <!-- ═══ TOP AD AREA ════════════════════════════════════════
+       This div is EMPTY right now.
+       When you add a real AdSense <ins> tag inside it,
+       it will grow automatically to fit the ad.
+       When empty, it takes zero height — navbar stays at top.
+  ══════════════════════════════════════════════════════════ -->
+  <div class="top-ad-area">
+    <!-- AdSense ad unit will go here later. Example:
     <ins class="adsbygoogle"
          style="display:block"
-         data-ad-client="YOUR-ID"
-         data-ad-slot="XXXX"
-         data-ad-format="auto"></ins>
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="XXXXXXXXXX"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+  </div>
 
-</div>-->
+  <!-- ═══ NAVBAR ════════════════════════════════════════════ -->
+  <nav class="navbar">
 
- <!-- advertisement area (top) friendly with google adsensce-->
+    <!-- Left: Logo -->
+    <div class="navbar__logo">
+      <a href="index.html">
+        <img src="AstaNow.png" alt="AstaNow" class="navbar__logo-img" />
+      </a>
+    </div>
+
+    <!-- Right: Sign me up button -->
+    <div class="navbar__actions">
+      <a href="#" class="btn-signup">Sign me up</a>
+    </div>
+
+  </nav>
+
+  <!-- ═══ PAGE CONTENT (articles, etc.) goes below here ══════ -->
+  <main class="page-content">
+    <!-- We'll build this in the next steps -->
+  </main>
 
 </body>
 </html>
