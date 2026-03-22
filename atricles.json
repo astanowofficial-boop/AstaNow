@@ -1,0 +1,14 @@
+[
+  { "slug": "iphone", "title": "iPhone 18 Launch" }
+]
+{
+  "title": "iPhone 18 Launch",
+  "author": "Admin",
+  "date": "March 2026",
+  "content": [
+    { "type": "paragraph", "text": "Apple is planning a major upgrade..." },
+    { "type": "image", "src": "images/iphone.jpg" },
+    { "type": "heading", "text": "Biggest Changes" },
+    { "type": "paragraph", "text": "The processor will be faster..." }
+  ]
+}
