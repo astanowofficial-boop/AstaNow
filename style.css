@@ -1,17 +1,20 @@
 .top-ad {
     width: 100%;
-    max-width: 1000px;
-    height: 120px;
+    height: 100px;
 
-    margin: 80px auto 20px auto;
+    background-color: #0a0a0a;
+    border: 1px dashed #333;
 
-    background-color: #111;
-    border: 1px dashed #444;
-
-    color: #777;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 14px;
+    color: #666;
+    font-size: 13px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
