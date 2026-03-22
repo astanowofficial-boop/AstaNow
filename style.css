@@ -51,7 +51,7 @@
 }
 .nav-content {
     position: relative;
-    height: 180px;   /* increase navbar height */
+    height: 100px;   /* increase navbar height */
 }
 .nav-logo img {
     height: 120px;
