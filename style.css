@@ -51,10 +51,10 @@
 }
 .nav-content {
     position: relative;
-    height: 100px;   /* increase navbar height */
+    height: 50px;   /* increase navbar height */
 }
 .nav-logo img {
-    height: 200px;
+    height: 300px;
 }
 
 /* RIGHT BUTTON */
