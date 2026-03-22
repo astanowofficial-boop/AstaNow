@@ -50,8 +50,12 @@
     transform: translate(-50%, -50%);
 }
 .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 180px;
     position: relative;
-    height: 50px;   /* increase navbar height */
 }
 .nav-logo img {
     height: 300px;
