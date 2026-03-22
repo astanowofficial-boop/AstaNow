@@ -23,6 +23,23 @@
 
       <div id="article-body"></div>
     </div>
+    fetch("/data/articles-list.json")
+  .then(res => res.json())
+  .then(list => {
+    const container = document.getElementById("next-articles");
+
+    list.slice(0, 3).forEach(article => {
+      const div = document.createElement("div");
+
+      div.innerHTML = `
+        <a href="/article.html?slug=${article.slug}">
+          <h3>${article.title}</h3>
+        </a>
+      `;
+
+      container.appendChild(div);
+    });
+  });
 
     <!-- SIDEBAR -->
     <aside>
