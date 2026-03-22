@@ -49,9 +49,12 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
+.nav-content {
+    position: relative;
+    height: 180px;   /* increase navbar height */
+}
 .nav-logo img {
-    height: 300px;
+    height: 120px;
 }
 
 /* RIGHT BUTTON */
