@@ -60,7 +60,7 @@ body {
 .navbar__logo {
   position: absolute;     /* take it out of flex flow */
   left: 50%;
-  transform: translateX(-50%); /* perfect center */
+  transform: translateX(-50%) translateY(4px); /* perfect center */
 }
 
 .navbar__logo-img {
