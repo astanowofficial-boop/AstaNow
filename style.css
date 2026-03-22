@@ -64,7 +64,7 @@ body {
 }
 
 .navbar__logo-img {
-  height: 100px;           /* adjust to your logo's actual height */
+  height: 300px;           /* adjust to your logo's actual height */
   display: block;
   object-fit: contain; /* never stretches or crops the image */
 }
