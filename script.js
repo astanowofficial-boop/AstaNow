@@ -7,16 +7,18 @@ if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark');
 }
 
-// This function runs when toggle button is clicked
-function toggleTheme() {
-  document.body.classList.toggle('dark');
+// Opens and closes the side menu
+function toggleSideMenu() {
+  var menu    = document.getElementById('sideMenu');
+  var overlay = document.getElementById('sideOverlay');
 
-  // Save choice so it remembers after page refresh
-  if (document.body.classList.contains('dark')) {
-    localStorage.setItem('theme', 'dark');
-  } else {
-    localStorage.setItem('theme', 'light');
-  }
+  // # toggle active class on both menu and overlay
+  menu.classList.toggle('active');
+  overlay.classList.toggle('active');
+
+  // # prevent page scrolling when menu is open
+  document.body.style.overflow =
+    menu.classList.contains('active') ? 'hidden' : '';
 }
 
 /* # nav links pushed to center-right using margin auto */

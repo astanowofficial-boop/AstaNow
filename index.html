@@ -57,11 +57,13 @@
       </ul>
     </div>
 
-    <!-- # Dark/Light toggle -->
-    <button class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle dark/light">
-      <span class="icon-moon">🌙</span>
-      <span class="icon-sun">☀️</span>
-    </button>
+   <!-- # Dark/Light toggle — proper switch style -->
+<div class="theme-switch" onclick="toggleTheme()" title="Toggle dark/light mode">
+  <div class="switch-track">
+    <span class="switch-icon">🌙</span>
+    <div class="switch-thumb"></div>
+  </div>
+</div>
 
   </nav>
 
@@ -78,14 +80,38 @@
                      <!-- navigations ends     -->
 
 
-      <!-- ============================
-         HAMBURGER SIDE MENU
-         Hidden by default
-         Slides in when hamburger clicked
-    ============================= -->
-    <div class="side-menu">
-         <!-- side menu content comes in Step 3 -->
-    </div>
+     <!-- # dark overlay behind side menu -->
+<div class="side-overlay" id="sideOverlay" onclick="toggleSideMenu()"></div>
+
+<!-- # side menu panel -->
+<div class="side-menu" id="sideMenu">
+
+  <!-- # close button inside menu -->
+  <button class="side-menu-close" onclick="toggleSideMenu()">✕</button>
+
+  <!-- # menu heading -->
+  <div class="side-menu-header">Menu</div>
+
+  <!-- # page links -->
+  <nav class="side-menu-links">
+    <a href="pages/team.html" class="side-menu-item">
+      <span>👥</span> Team
+    </a>
+    <a href="pages/contact.html" class="side-menu-item">
+      <span>✉️</span> Contact Us
+    </a>
+    <a href="pages/about.html" class="side-menu-item">
+      <span>ℹ️</span> About Us
+    </a>
+    <a href="pages/privacy.html" class="side-menu-item">
+      <span>🔒</span> Privacy Policy
+    </a>
+    <a href="pages/terms.html" class="side-menu-item">
+      <span>📄</span> Terms & Conditions
+    </a>
+  </nav>
+
+</div> 
 
      <!-- ============================
          MAIN PAGE CONTENT
