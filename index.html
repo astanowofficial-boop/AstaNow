@@ -29,29 +29,20 @@
 
     <header class="navbar">
 
-  <!-- # LEFT SIDE — hamburger button -->
-  <button class="hamburger-btn" onclick="toggleSideMenu()">
-    <!-- # three lines icon made with plain divs -->
-    <div class="ham-line"></div>
-    <div class="ham-line"></div>
-    <div class="ham-line"></div>
-  </button>
-
-  <!-- # CENTER — logo -->
+  <!-- # LEFT SIDE — logo on homepage -->
   <div class="navbar-logo">
     <a href="index.html">
-      <!-- # replace logo.png with your actual logo filename -->
       <img src="logo.png" alt="AstaNow" class="logo-img" />
     </a>
   </div>
 
-  <!-- # RIGHT SIDE — nav links -->
+  <!-- # CENTER — nav links -->
   <nav class="navbar-right">
 
-    <!-- # About Us — simple link -->
+    <!-- # About Us -->
     <a href="pages/about.html" class="nav-link">About Us</a>
 
-    <!-- # Subscribe — button, will connect to OneSignal later -->
+    <!-- # Subscribe -->
     <button class="nav-subscribe-btn">Subscribe</button>
 
     <!-- # Articles dropdown -->
@@ -59,7 +50,6 @@
       <button class="nav-link dropdown-trigger" onclick="toggleDropdown()">
         Articles ▾
       </button>
-      <!-- # dropdown list — hidden by default -->
       <ul class="dropdown-menu" id="dropdownMenu">
         <li><a href="pages/technology.html" class="dropdown-item">Technology</a></li>
         <li><a href="pages/politics.html" class="dropdown-item">Politics</a></li>
@@ -67,23 +57,27 @@
       </ul>
     </div>
 
-    <!-- # Dark/Light toggle button -->
+    <!-- # Dark/Light toggle -->
     <button class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle dark/light">
-      <!-- # moon icon shown in light mode -->
       <span class="icon-moon">🌙</span>
-      <!-- # sun icon shown in dark mode -->
       <span class="icon-sun">☀️</span>
     </button>
 
   </nav>
 
-</header>
+  <!-- # RIGHT SIDE — hamburger on homepage -->
+  <button class="hamburger-btn" onclick="toggleSideMenu()">
+    <div class="ham-line"></div>
+    <div class="ham-line"></div>
+    <div class="ham-line"></div>
+  </button>
 
+</header>
 
 
                      <!-- navigations ends     -->
 
-                     
+
       <!-- ============================
          HAMBURGER SIDE MENU
          Hidden by default

@@ -19,28 +19,21 @@ function toggleTheme() {
   }
 }
 
-// STEP 2 — Dropdown and side menu toggles
-
-// Opens and closes the Articles dropdown
-function toggleDropdown() {
-  var menu = document.getElementById('dropdownMenu');
-  // # toggle active class — CSS shows/hides based on this
-  menu.classList.toggle('active');
+/* # nav links pushed to center-right using margin auto */
+.navbar-right {
+  margin-left: auto;    /* # pushes nav links away from logo */
+  margin-right: 12px;   /* # gap between nav links and hamburger */
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
+```
 
-// Close dropdown if user clicks anywhere else on page
-document.addEventListener('click', function(event) {
-  var wrapper = document.querySelector('.dropdown-wrapper');
-  // # if click was outside dropdown wrapper — close it
-  if (wrapper && !wrapper.contains(event.target)) {
-    var menu = document.getElementById('dropdownMenu');
-    if (menu) menu.classList.remove('active');
-  }
-});
+---
 
-// Side menu toggle — content added in Step 3
-function toggleSideMenu() {
-  // # placeholder for now — Step 3 will fill this
-  console.log('side menu clicked');
-}
+**Save → `ship` → refresh.**
 
+Now layout is:
+```
+[LOGO]    [About Us] [Subscribe] [Articles▾] [🌙]    [☰]
+left           center-right links              right
