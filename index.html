@@ -1,119 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AstaNow</title>
+    <head> 
+            <!-- # tells browser page language is English — good for SEO -->
+               <meta charset="UTF-8" />    <!-- # UTF-8 means all characters including Hindi will work correctly -->
+        <meta name="'viewport" content="width=device-width , intial-scale=1.0"/>
+           <!-- # makes page look correct on mobile phones, not zoomed out -->
+         <title>AstaNow</title>
+             <!-- # text that appears on browser tab -->
+        <link rel="stylesheet" href="style.css"/> 
+          <!-- # connects your style.css file to this page -->
+    </head>
 
-  <!-- Your stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Google AdSense script goes here later -->
-  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_ID" crossorigin="anonymous"></script> -->
-</head>
-<body>
-
-  <!-- ═══ TOP AD AREA ════════════════════════════════════════
-       This div is EMPTY right now.
-       When you add a real AdSense <ins> tag inside it,
-       it will grow automatically to fit the ad.
-       When empty, it takes zero height — navbar stays at top.
-  ══════════════════════════════════════════════════════════ -->
-  <div class="top-ad-area">
-    <!-- AdSense ad unit will go here later. Example:
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-         data-ad-slot="XXXXXXXXXX"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    -->
-  </div>
-
-  <!-- ═══ NAVBAR ════════════════════════════════════════════ -->
-  <nav class="navbar">
-
-    <!-- Left: Logo -->
-    <div class="navbar__logo">
-      <a href="index.html">
-        <img src="AstaNow.png" alt="AstaNow" class="navbar__logo-img" />
-      </a>
+    <body>
+        <!-- # everything visible on screen goes inside body -->
+     <!-- ============================
+         TOP AD AREA
+         Empty right now — invisible
+         AdSense fills it when live
+    ============================= -->
+    <div class="top-ad-area"></div>
+      <!-- ============================
+         NAVBAR
+         Contains: hamburger + logo + links + toggle
+    ============================= -->
+    <header class="NAVBAR">
+         <!-- navbar content comes in Step 2 -->
+    </header>
+      <!-- ============================
+         HAMBURGER SIDE MENU
+         Hidden by default
+         Slides in when hamburger clicked
+    ============================= -->
+    <div class="side-menu">
+         <!-- side menu content comes in Step 3 -->
     </div>
 
-    <!-- Right: Sign me up button -->
-    <div class="navbar__actions">
-      <a href="#" class="btn-signup">Sign me up</a>
-    </div>
+     <!-- ============================
+         MAIN PAGE CONTENT
+         Hero section + article cards
+    ============================= -->
 
-  </nav>
+    <main class="main-content">
+        <!-- content comes in Step 4 and 5 -->
+    </main>
 
-  <!-- ═══ PAGE CONTENT (articles, etc.) goes below here ══════ -->
-  <main class="page-content">
-    <!-- We'll build this in the next steps -->
-     <main class="page-content">
+        <!-- ============================
+         FOOTER
+         Simple bottom bar
+    ============================= --> 
+    <footer class="footer">
+        <!-- footer comes later -->
+    </footer>
 
-  <!-- ═══ ARTICLE HEADER (filled dynamically by script.js) ══ -->
-  <div class="article-header">
-
-    <!-- 1. Category breadcrumb -->
-    <div class="article-category">
-      <span id="art-category"></span>
-      <span class="category-sep"> - </span>
-      <span id="art-subcategory"></span>
-    </div>
-
-    <!-- 2. Article title -->
-    <h1 class="article-title" id="art-title"></h1>
-
-    <!-- 3. Author + date row -->
-    <div class="article-meta">
-      <span class="meta-text">
-        Authored by: <strong id="art-author"></strong>
-        &nbsp;|&nbsp;
-        Updated <span id="art-date"></span>, <span id="art-time"></span>
-      </span>
-
-      <!-- 4. Social icons (right side) -->
-      <div class="social-icons">
-        <a id="social-instagram" href="#" target="_blank" aria-label="Instagram">
-          <!-- Instagram SVG icon -->
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5"/>
-            <circle cx="12" cy="12" r="4.5"/>
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-          </svg>
-        </a>
-        <a id="social-facebook" href="#" target="_blank" aria-label="Facebook">
-          <!-- Facebook SVG icon -->
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-          </svg>
-        </a>
-        <a id="social-twitter" href="#" target="_blank" aria-label="X / Twitter">
-          <!-- X (Twitter) SVG icon -->
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L2.25 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-          </svg>
-        </a>
-        <a id="social-email" href="#" aria-label="Email">
-          <!-- Email SVG icon -->
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="4" width="20" height="16" rx="2"/>
-            <path d="M2 7l10 7 10-7"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-  </div>
-  <!-- ═══ END ARTICLE HEADER ════════════════════════════════ -->
-
-</main>
-
-<!-- Load the script at the bottom so HTML is ready first -->
-<script src="script.js"></script>
-  </main>
-
-</body>
+     <!-- # script.js loaded at bottom so HTML loads first -->
+      <script src="script.js"> </script>
+    </body>
 </html>
