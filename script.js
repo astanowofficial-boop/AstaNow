@@ -18,3 +18,29 @@ function toggleTheme() {
     localStorage.setItem('theme', 'light');
   }
 }
+
+// STEP 2 — Dropdown and side menu toggles
+
+// Opens and closes the Articles dropdown
+function toggleDropdown() {
+  var menu = document.getElementById('dropdownMenu');
+  // # toggle active class — CSS shows/hides based on this
+  menu.classList.toggle('active');
+}
+
+// Close dropdown if user clicks anywhere else on page
+document.addEventListener('click', function(event) {
+  var wrapper = document.querySelector('.dropdown-wrapper');
+  // # if click was outside dropdown wrapper — close it
+  if (wrapper && !wrapper.contains(event.target)) {
+    var menu = document.getElementById('dropdownMenu');
+    if (menu) menu.classList.remove('active');
+  }
+});
+
+// Side menu toggle — content added in Step 3
+function toggleSideMenu() {
+  // # placeholder for now — Step 3 will fill this
+  console.log('side menu clicked');
+}
+

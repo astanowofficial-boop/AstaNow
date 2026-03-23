@@ -79,3 +79,163 @@ body {
   /* # no height set — invisible when empty, grows when AdSense loads */
 }
 
+/* ============================================
+   STEP 2 — Navbar
+============================================ */
+
+/* # Main navbar bar */
+.navbar {
+  position: sticky;        /* # sticks to top when scrolling */
+  top: 0;                  /* # sticks at very top edge */
+  z-index: 1000;           /* # always above all other content */
+  width: 100%;
+  height: 64px;
+  background-color: var(--navbar-bg);        /* # uses CSS variable */
+  border-bottom: 1px solid var(--border-color);
+  display: flex;           /* # puts items in a row */
+  align-items: center;     /* # vertically centers everything */
+  padding: 0 20px;         /* # breathing space left and right */
+  transition: background-color 0.3s ease;
+}
+
+/* # LEFT — hamburger button */
+.hamburger-btn {
+  background: none;        /* # no background */
+  border: none;            /* # no border */
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;  /* # stack lines vertically */
+  gap: 5px;                /* # space between lines */
+}
+
+/* # each line of hamburger icon */
+.ham-line {
+  width: 22px;
+  height: 2px;
+  background-color: var(--text-primary);  /* # changes with theme */
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+/* # CENTER — logo wrapper */
+.navbar-logo {
+  position: absolute;      /* # take out of normal flow */
+  left: 50%;               /* # move to center */
+  transform: translateX(-50%); /* # perfect center alignment */
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  display: block;
+}
+
+.logo-img {
+  height: 36px;            /* # control logo height here */
+  width: auto;             /* # keeps proportions correct */
+  display: block;
+  object-fit: contain;
+}
+
+/* # RIGHT — nav links wrapper */
+.navbar-right {
+  margin-left: auto;       /* # pushes to right side */
+  display: flex;
+  align-items: center;
+  gap: 8px;                /* # space between each item */
+}
+
+/* # nav text links */
+.nav-link {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--bg-secondary);  /* # subtle hover effect */
+}
+
+/* # Subscribe button — stands out from other links */
+.nav-subscribe-btn {
+  background-color: var(--text-primary);  /* # black in light, white in dark */
+  color: var(--bg-color);                 /* # opposite of bg — always readable */
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.nav-subscribe-btn:hover {
+  opacity: 0.85;
+}
+
+/* # Articles dropdown wrapper */
+.dropdown-wrapper {
+  position: relative;      /* # dropdown positions itself relative to this */
+}
+
+/* # dropdown list — hidden by default */
+.dropdown-menu {
+  display: none;           /* # hidden until toggleDropdown() runs */
+  position: absolute;      /* # floats over page content */
+  top: calc(100% + 8px);  /* # appears just below the button */
+  right: 0;                /* # aligns to right edge of button */
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  list-style: none;
+  padding: 6px 0;
+  min-width: 160px;
+  box-shadow: 0 4px 16px var(--shadow);
+  z-index: 999;
+}
+
+/* # show dropdown when active class added */
+.dropdown-menu.active {
+  display: block;
+}
+
+/* # each item in dropdown */
+.dropdown-item {
+  display: block;
+  padding: 10px 16px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.15s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--bg-secondary);
+}
+
+/* # dark/light toggle button */
+.theme-toggle-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* # show moon in light mode, hide sun */
+.icon-sun { display: none; }
+.icon-moon { display: inline; }
+
+/* # show sun in dark mode, hide moon */
+body.dark .icon-sun { display: inline; }
+body.dark .icon-moon { display: none; }
+
