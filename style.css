@@ -31,5 +31,51 @@
     --bg-color: #ffffff; /* # main background - white */
     --bg-secondary: #f7f7f7; /* #card backgorund - very light grey */
     --text-primary: #111111; /* # main text — near black */
-    --text-secondary: #555555; 
+    --text-secondary: #555555; /* # smaller text — grey */
+    --text-muted: #888888;       /* # least important text — light grey */
+    --border-color: #e5e5e5;     /* # lines and borders */
+    --navbar-bg: #ffffff;        /* # navbar background */
+    --card-bg: #ffffff;          /* # article card background */
+    --card-hover: #f7f7f7;       /* # card background on hover */
+    --shadow: rgba(0,0,0,0.08);  /* # soft shadow on cards */
 }
+
+/* # SECTION 3 — DARK THEME VARIABLES
+   When body has class "dark" added to it,
+   these values OVERRIDE the light theme values above
+   Only the values change — all the CSS rules stay the same */
+
+   body.dark {
+  --bg-color: #111111;          /* # main background — dark */
+  --bg-secondary: #1a1a1a;      /* # card backgrounds — slightly lighter dark */
+  --text-primary: #f0f0f0;      /* # main text — near white */
+  --text-secondary: #aaaaaa;    /* # smaller text — light grey */
+  --text-muted: #666666;        /* # least important text */
+  --border-color: #2a2a2a;      /* # lines and borders — subtle dark */
+  --navbar-bg: #111111;         /* # navbar background */
+  --card-bg: #1a1a1a;           /* # article card background */
+  --card-hover: #222222;        /* # card background on hover */
+  --shadow: rgba(0,0,0,0.4);    /* # stronger shadow in dark mode */
+}
+
+/* # SECTION 4 — BASE STYLES
+   Apply the variables to basic elements */
+body {
+  background-color: var(--bg-color);   /* # uses variable — changes with theme */
+  color: var(--text-primary);          /* # uses variable — changes with theme */
+  font-family: Arial, sans-serif;      /* # default font — change when logo font decided */
+  font-size: 16px;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* # smooth animation when switching dark/light */
+}
+
+
+/* # SECTION 5 — TOP AD AREA */
+.top-ad-area {
+  width: 100%;
+  text-align: center;
+  background-color: var(--bg-secondary);
+  /* # no height set — invisible when empty, grows when AdSense loads */
+}
+
