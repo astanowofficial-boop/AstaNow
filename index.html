@@ -3,128 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AstaNow Blog</title>
-    <!-- Use a very similar font to Webflow's proprietary standard fonts (often system fonts or a clean sans-serif like Inter/Graphik) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>AstaNow | Empowering Creatives</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Also link style.css just in case the active file is style.css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="navbar-left">
-            <a href="/" class="brand">
-                <svg width="32" height="32" viewBox="0 0 100 100" fill="none" class="brand-icon">
-                    <!-- AstaNow abstract logo representation -->
-                    <circle cx="50" cy="50" r="45" fill="#146ef5"/>
-                    <path d="M50 20 L25 75 L40 75 L50 50 L60 75 L75 75 Z" fill="white"/>
-                </svg>
-                <span class="brand-text">AstaNow</span>
-            </a>
-            <nav class="nav-links desktop-only">
-                <a href="#" class="nav-item">Product <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                <a href="#" class="nav-item">Solutions <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                <a href="#" class="nav-item">Resources <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                <a href="#" class="nav-item">Enterprise</a>
-                <a href="#" class="nav-item">Pricing</a>
-            </nav>
-        </div>
-        
-        <div class="navbar-right desktop-only">
-            <a href="#" class="login-link">Log in</a>
-            <a href="#" class="contact-link">Contact Sales</a>
-            <a href="#" class="btn-primary">Get started — it's free</a>
-        </div>
-
-        <div class="navbar-right mobile-only">
-            <a href="#" class="contact-link mobile-contact">Contact Sales</a>
-            <button class="hamburger-menu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="3" y="6" width="18" height="2" fill="black"/>
-                    <rect x="3" y="11" width="18" height="2" fill="black"/>
-                    <rect x="3" y="16" width="18" height="2" fill="black"/>
-                </svg>
-            </button>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo">AstaNow</a>
+            
+            <div class="header-right">
+                <nav class="desktop-nav">
+                    <a href="#">Courses</a>
+                    <a href="#">Stories</a>
+                    <a href="#">Spotlights</a>
+                    <a href="#">Conversations</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="icon-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                    <button class="icon-btn hamburger-menu" aria-label="Menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="page-wrapper">
+    <main class="page-content">
+
+        <!-- Hero Section -->
         <section class="hero-section">
-            <div class="hero-content">
-                <h1 class="hero-heading">AstaNow Blog</h1>
-                <p class="hero-subtext">Stories, insights, and advice that will transform how you design and build for the web.</p>
+            <div class="hero-left">
+                <p class="category-tag">Feature Story with AstaNow Community</p>
+                <h1 class="hero-title">Been There Done That: Marylou Faure</h1>
+                <p class="hero-excerpt">Artist and illustrator Marylou Faure answers questions from our community about building and balancing a career across two very different parts of the industry.</p>
+                <a href="#" class="read-more">Read More</a>
             </div>
-            <div class="hero-divider"></div>
-        </section>
-
-        <section class="content-grid">
-            <div class="featured-column">
-                <a href="#" class="featured-card">
-                    <div class="featured-image-wrapper">
-                        <!-- CSS representation of the purple graphic -->
-                        <div class="mock-graphic">
-                            <div class="mock-window w1">
-                                <div class="mock-dot d1"></div>
-                                <div class="mock-dot d2"></div>
-                                <div class="mock-dot d3"></div>
-                                <div class="mock-shape shape-star"></div>
-                            </div>
-                            <div class="mock-window w2">
-                                <div class="mock-dot d1"></div>
-                                <div class="mock-dot d2"></div>
-                                <div class="mock-dot d3"></div>
-                                <div class="mock-shape shape-cursor"></div>
-                            </div>
-                            <div class="mock-window w3">
-                                <div class="mock-dot d1"></div>
-                                <div class="mock-dot d2"></div>
-                                <div class="mock-dot d3"></div>
-                                <div class="mock-shape shape-gear"></div>
-                            </div>
-                            <div class="mock-window w4">
-                                <div class="mock-dot d1"></div>
-                                <div class="mock-dot d2"></div>
-                                <div class="mock-dot d3"></div>
-                                <div class="mock-shape shape-a">Aa</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured-text-wrapper">
-                        <h2 class="featured-title">7 emerging web design trends for 2024 and beyond</h2>
-                        <p class="featured-desc">Explore the trends that will take web design and development by storm in 2024.</p>
-                        <div class="featured-author">by Jesse Sumrak</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="sidebar-column">
-                <h2 class="sidebar-heading">New</h2>
-                
-                <div class="sidebar-articles">
-                    <a href="#" class="sidebar-article">
-                        <div class="article-tag">INSPIRATION</div>
-                        <h3 class="article-title">How the City of Los Angeles connects its employees and constituents to critical information and opportunities</h3>
-                    </a>
-                    
-                    <div class="article-divider"></div>
-                    
-                    <a href="#" class="sidebar-article">
-                        <div class="article-tag">INSPIRATION</div>
-                        <h3 class="article-title">Scaling collaboration: Navigating challenges as teams grow</h3>
-                    </a>
-                    
-                    <div class="article-divider"></div>
-                    
-                    <a href="#" class="sidebar-article">
-                        <h3 class="article-title">8 cloneables that showcase variables and Spline animations in Webflow</h3>
-                    </a>
+            
+            <div class="hero-right">
+                <!-- A mockup of a collage using pure CSS shapes -->
+                <div class="collage">
+                    <div class="collage-bg"></div>
+                    <div class="collage-block type-text">DONE<br>THAT</div>
+                    <div class="collage-block type-image"></div>
+                    <div class="collage-block type-solid">with Marylou<br>Faure</div>
                 </div>
             </div>
         </section>
 
-        <section class="popular-section">
-            <h2 class="popular-heading">Popular</h2>
+        <!-- Article Grid Section 1 -->
+        <div class="divider-line"></div>
+        <section class="grid-section">
+            <div class="articles-grid">
+                <article class="card">
+                    <div class="card-image bg-img-1"></div>
+                    <p class="category-tag">Payday with AstaNow</p>
+                    <h2 class="card-title">Payday: Filippos Fragkogiannis</h2>
+                    <p class="card-excerpt">Rather than having set rates, Filippos has a dynamic pricing system for the graphic design work he creates. Explore the different factors he considers and see what he's charged in the past here.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-image bg-img-2">
+                        <div class="collage-mini">
+                            <div class="c-left">BEEN<br>THERE</div>
+                            <div class="c-right">DONE<br>THAT</div>
+                        </div>
+                    </div>
+                    <p class="category-tag">Feature Story with AstaNow Community</p>
+                    <h2 class="card-title">Been There Done That: Caterina Bianchini</h2>
+                    <p class="card-excerpt">Studio NARI founder Caterina Bianchini answers questions about her career as an award-winning art director in our new video series.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-image bg-img-3"></div>
+                    <p class="category-tag">Payday with AstaNow</p>
+                    <h2 class="card-title">Payday: Harriet Davey</h2>
+                    <p class="card-excerpt">3D artist Harriet Davey tells us how she prices her projects for clients in our new series where pricing transparency is the name of the game.</p>
+                </article>
+            </div>
         </section>
+
+        <div class="divider-line"></div>
+        
+        <!-- Large Banner -->
+        <section class="text-banner">
+            <p class="category-tag text-center">Learn with us</p>
+            <h2 class="banner-title">We're teaching graphic designers around the world how to price their work</h2>
+            <div class="text-center">
+                <a href="#" class="read-more">Really? Show me how.</a>
+            </div>
+        </section>
+
+        <div class="divider-line"></div>
+
+        <!-- Section 2: Extracurricular -->
+        <section class="grid-section">
+            <h3 class="section-heading">Extracurricular</h3>
+            <div class="articles-grid">
+                <article class="card">
+                    <div class="card-image placeholder-grey"></div>
+                    <p class="category-tag">Extracurricular</p>
+                    <h2 class="card-title">Extracurricular with F*ck Being Humble</h2>
+                    <p class="card-excerpt">Stefanie Sword-Williams explains why self-promotion isn't a dirty word and reveals how to conquer imposter syndrome</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-image placeholder-grey"></div>
+                    <p class="category-tag">Extracurricular</p>
+                    <h2 class="card-title">Extracurricular with Aries Moross</h2>
+                    <p class="card-excerpt">In this week's episode, we discussed navigating the workplace with the Studio Moross founder</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-image placeholder-grey"></div>
+                    <p class="category-tag">Extracurricular</p>
+                    <h2 class="card-title">Extracurricular with Craig Oldham</h2>
+                    <p class="card-excerpt">The no-nonsense advice you need about launching a design career from the author of "Oh Sh*t, What Now?"</p>
+                </article>
+            </div>
+        </section>
+
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <p class="footer-text">Empowering the next generation of creatives.</p>
+                <div class="socials">
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-nav">
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="footer-logo">AstaNow</h2>
+    </footer>
 
 </body>
 </html>
