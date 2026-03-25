@@ -1,136 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-            <!-- # tells browser page language is English — good for SEO -->
-               <meta charset="UTF-8" />    <!-- # UTF-8 means all characters including Hindi will work correctly -->
-        <meta name="'viewport" content="width=device-width , intial-scale=1.0"/>
-           <!-- # makes page look correct on mobile phones, not zoomed out -->
-         <title>AstaNow</title>
-             <!-- # text that appears on browser tab -->
-        <link rel="stylesheet" href="style.css"/> 
-          <!-- # connects your style.css file to this page -->
-    </head>
-
-    <body>
-        <!-- # everything visible on screen goes inside body -->
-     <!-- ============================
-         TOP AD AREA
-         Empty right now — invisible
-         AdSense fills it when live
-    ============================= -->
-    <div class="top-ad-area"></div>
-      <!-- ============================
-         NAVBAR
-         Contains: hamburger + logo + links + toggle
-    ============================= -->
-
-
-           <!--navigation Bar ..............-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstaNow Blog</title>
+    <!-- Use a very similar font to Webflow's proprietary standard fonts (often system fonts or a clean sans-serif like Inter/Graphik) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
     <header class="navbar">
+        <div class="navbar-left">
+            <a href="/" class="brand">
+                <svg width="32" height="32" viewBox="0 0 100 100" fill="none" class="brand-icon">
+                    <!-- AstaNow abstract logo representation -->
+                    <circle cx="50" cy="50" r="45" fill="#146ef5"/>
+                    <path d="M50 20 L25 75 L40 75 L50 50 L60 75 L75 75 Z" fill="white"/>
+                </svg>
+                <span class="brand-text">AstaNow</span>
+            </a>
+            <nav class="nav-links desktop-only">
+                <a href="#" class="nav-item">Product <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                <a href="#" class="nav-item">Solutions <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                <a href="#" class="nav-item">Resources <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                <a href="#" class="nav-item">Enterprise</a>
+                <a href="#" class="nav-item">Pricing</a>
+            </nav>
+        </div>
+        
+        <div class="navbar-right desktop-only">
+            <a href="#" class="login-link">Log in</a>
+            <a href="#" class="contact-link">Contact Sales</a>
+            <a href="#" class="btn-primary">Get started — it's free</a>
+        </div>
 
-  <!-- # LEFT SIDE — logo on homepage -->
-  <div class="navbar-logo">
-    <a href="index.html">
-      <img src="AstaNow.png" alt="AstaNow" class="logo-img" />
-    </a>
-  </div>
+        <div class="navbar-right mobile-only">
+            <a href="#" class="contact-link mobile-contact">Contact Sales</a>
+            <button class="hamburger-menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="6" width="18" height="2" fill="black"/>
+                    <rect x="3" y="11" width="18" height="2" fill="black"/>
+                    <rect x="3" y="16" width="18" height="2" fill="black"/>
+                </svg>
+            </button>
+        </div>
+    </header>
 
-  <!-- # CENTER — nav links -->
-  <nav class="navbar-right">
+    <main class="page-wrapper">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-heading">AstaNow Blog</h1>
+                <p class="hero-subtext">Stories, insights, and advice that will transform how you design and build for the web.</p>
+            </div>
+            <div class="hero-divider"></div>
+        </section>
 
-    <!-- # About Us -->
-    <a href="pages/about.html" class="nav-link">About Us</a>
+        <section class="content-grid">
+            <div class="featured-column">
+                <a href="#" class="featured-card">
+                    <div class="featured-image-wrapper">
+                        <!-- CSS representation of the purple graphic -->
+                        <div class="mock-graphic">
+                            <div class="mock-window w1">
+                                <div class="mock-dot d1"></div>
+                                <div class="mock-dot d2"></div>
+                                <div class="mock-dot d3"></div>
+                                <div class="mock-shape shape-star"></div>
+                            </div>
+                            <div class="mock-window w2">
+                                <div class="mock-dot d1"></div>
+                                <div class="mock-dot d2"></div>
+                                <div class="mock-dot d3"></div>
+                                <div class="mock-shape shape-cursor"></div>
+                            </div>
+                            <div class="mock-window w3">
+                                <div class="mock-dot d1"></div>
+                                <div class="mock-dot d2"></div>
+                                <div class="mock-dot d3"></div>
+                                <div class="mock-shape shape-gear"></div>
+                            </div>
+                            <div class="mock-window w4">
+                                <div class="mock-dot d1"></div>
+                                <div class="mock-dot d2"></div>
+                                <div class="mock-dot d3"></div>
+                                <div class="mock-shape shape-a">Aa</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-text-wrapper">
+                        <h2 class="featured-title">7 emerging web design trends for 2024 and beyond</h2>
+                        <p class="featured-desc">Explore the trends that will take web design and development by storm in 2024.</p>
+                        <div class="featured-author">by Jesse Sumrak</div>
+                    </div>
+                </a>
+            </div>
 
-    <!-- # Subscribe -->
-    <button class="nav-subscribe-btn">Subscribe</button>
+            <div class="sidebar-column">
+                <h2 class="sidebar-heading">New</h2>
+                
+                <div class="sidebar-articles">
+                    <a href="#" class="sidebar-article">
+                        <div class="article-tag">INSPIRATION</div>
+                        <h3 class="article-title">How the City of Los Angeles connects its employees and constituents to critical information and opportunities</h3>
+                    </a>
+                    
+                    <div class="article-divider"></div>
+                    
+                    <a href="#" class="sidebar-article">
+                        <div class="article-tag">INSPIRATION</div>
+                        <h3 class="article-title">Scaling collaboration: Navigating challenges as teams grow</h3>
+                    </a>
+                    
+                    <div class="article-divider"></div>
+                    
+                    <a href="#" class="sidebar-article">
+                        <h3 class="article-title">8 cloneables that showcase variables and Spline animations in Webflow</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <!-- # Articles dropdown -->
-    <div class="dropdown-wrapper">
-      <button class="nav-link dropdown-trigger" onclick="toggleDropdown()">
-        Articles ▾
-      </button>
-      <ul class="dropdown-menu" id="dropdownMenu">
-        <li><a href="pages/technology.html" class="dropdown-item">Technology</a></li>
-        <li><a href="pages/politics.html" class="dropdown-item">Politics</a></li>
-        <li><a href="pages/mythology.html" class="dropdown-item">Mythology</a></li>
-      </ul>
-    </div>
-
-   <!-- # Dark/Light toggle — proper switch style -->
-<div class="theme-switch" onclick="toggleTheme()" title="Toggle dark/light mode">
-  <div class="switch-track">
-    <span class="switch-icon">🌙</span>
-    <div class="switch-thumb"></div>
-  </div>
-</div>
-
-  </nav>
-
-  <!-- # RIGHT SIDE — hamburger on homepage -->
-  <button class="hamburger-btn" onclick="toggleSideMenu()">
-    <div class="ham-line"></div>
-    <div class="ham-line"></div>
-    <div class="ham-line"></div>
-  </button>
-
-</header>
-
-
-                     <!-- navigations ends     -->
-
-
-     <!-- # dark overlay behind side menu -->
-<div class="side-overlay" id="sideOverlay" onclick="toggleSideMenu()"></div>
-
-<!-- # side menu panel -->
-<div class="side-menu" id="sideMenu">
-
-  <!-- # close button inside menu -->
-  <button class="side-menu-close" onclick="toggleSideMenu()">✕</button>
-
-  <!-- # menu heading -->
-  <div class="side-menu-header">Menu</div>
-
-  <!-- # page links -->
-  <nav class="side-menu-links">
-    <a href="pages/team.html" class="side-menu-item">
-      <span>👥</span> Team
-    </a>
-    <a href="pages/contact.html" class="side-menu-item">
-      <span>✉️</span> Contact Us
-    </a>
-    <a href="pages/about.html" class="side-menu-item">
-      <span>ℹ️</span> About Us
-    </a>
-    <a href="pages/privacy.html" class="side-menu-item">
-      <span>🔒</span> Privacy Policy
-    </a>
-    <a href="pages/terms.html" class="side-menu-item">
-      <span>📄</span> Terms & Conditions
-    </a>
-  </nav>
-
-</div> 
-
-     <!-- ============================
-         MAIN PAGE CONTENT
-         Hero section + article cards
-    ============================= -->
-
-    <main class="main-content">
-        <!-- content comes in Step 4 and 5 -->
+        <section class="popular-section">
+            <h2 class="popular-heading">Popular</h2>
+        </section>
     </main>
 
-        <!-- ============================
-         FOOTER
-         Simple bottom bar
-    ============================= --> 
-    <footer class="footer">
-        <!-- footer comes later -->
-    </footer>
-
-     <!-- # script.js loaded at bottom so HTML loads first -->
-      <script src="script.js"> </script>
-    </body>
+</body>
 </html>
