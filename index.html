@@ -19,18 +19,26 @@
             
             <div class="header-right">
                 <nav class="desktop-nav">
-                    <a href="#">Courses</a>
+                    <a href="#">Articles</a>
                     <a href="#">Stories</a>
                     <a href="#">Spotlights</a>
-                    <a href="#">Conversations</a>
+                    <a href="#">Signup</a>
                 </nav>
                 <div class="header-actions">
                     <button class="icon-btn" aria-label="Search">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     </button>
-                    <button class="icon-btn hamburger-menu" aria-label="Menu">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-                    </button>
+                    <div class="mobile-menu-wrapper">
+                        <button class="icon-btn hamburger-menu" aria-label="Menu" onclick="document.getElementById('mobile-dropdown').classList.toggle('active')">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                        </button>
+                        <nav id="mobile-dropdown" class="mobile-dropdown-menu">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Condition</a>
+                            <a href="#">Copy Right Policy</a>
+                            <a href="#">Contact us</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
